@@ -1,1 +1,3 @@
-console.log("Event handler start");
+function makered(){
+    document.body.style.backgroundColor='red';
+}
