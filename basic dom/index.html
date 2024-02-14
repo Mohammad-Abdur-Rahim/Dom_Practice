@@ -11,7 +11,7 @@
         <h1>welcome To My Dom Journey</h1>
     </header>
     <main>
-        <h2>Welcome to main section</h2>
+        <h1>Welcome to main section</h1>
         <ul>
             <li>One</li>
             <li>Two</li>
@@ -23,5 +23,15 @@
 
     </footer>
     <script src="dom.js"></script>
+    <script>
+        const lilist=document.getElementsByTagName('li');
+        for(const li of lilist){
+            console.log(li.innerText);
+        }
+        const h1list=document.getElementsByTagName('h1');
+        for(const h1 of h1list){
+            console.log(h1.innerText);
+        }
+    </script>
 </body>
 </html>
