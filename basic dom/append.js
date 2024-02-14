@@ -8,6 +8,7 @@
 const mainContainer=document.getElementById('main-content');
 // console.log(mainContainer);
 // Declare what i use in html elements
+const section=document.createElement('section');
 const h1=document.createElement('h1');
 const ul=document.createElement('ul');
 const li=document.createElement('li');
@@ -25,13 +26,14 @@ li2.innerText='Native js';
 li3.innerText='Express js';
 li4.innerText='Mongo Db';
 // Finnaly add append 
-mainContainer.appendChild(h1);
-mainContainer.appendChild(li);
-mainContainer.appendChild(li1);
-mainContainer.appendChild(li2);
-mainContainer.appendChild(li3);
-mainContainer.appendChild(li4);
-mainContainer.appendChild(ul);
+section.appendChild(h1);
+mainContainer.appendChild(section);
+section.appendChild(li);
+section.appendChild(li1);
+section.appendChild(li2);
+section.appendChild(li3);
+section.appendChild(li4);
+section.appendChild(ul);
 
 
 
