@@ -7,11 +7,20 @@
 </head>
 <body>
     <h1 id="h1-tag">GitHub Important Info</h1>
-    <input type="text" placeholder="delete-type">
-    <button id="btn" >Delete</button>
+    <input id="delete-input" type="text" placeholder="delete-type">
+    <button id="btn" disabled  >Delete</button>
     <script>
 
-
+        document.getElementById('delete-input').addEventListener('keyup',function(event){
+            const text=event.target.value;
+            //-----------------------------------
+           const Deletebtn= document.getElementById('btn');
+           if(text==='delete-type'){
+            Deletebtn.removeAttribute('disabled');
+           }else{
+            Deletebtn.setAttribute('disabled',true);
+           }
+        });
 
 
 
@@ -20,7 +29,7 @@
         document.getElementById('btn').addEventListener('click',function (){
             const scret=document.getElementById('h1-tag');
             scret.style.display='none';
-        })
+        });
     </script>
 </body>
 </html>
