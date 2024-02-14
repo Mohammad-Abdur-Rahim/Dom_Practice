@@ -6,12 +6,18 @@
     <title>MouseEvent</title>
 </head>
 <body>
+
     <h1>Explore Mouse Events</h1>
-    <button id="btn">Click</button>
+    <button id="btn2">Click</button><br><br><br>
+
+    <button>events</button>
+    <input id="text-f" type="text">
     <script>
-        //Mouseenter,mousemove
-        document.getElementById('btn').addEventListener('mousemove',function(){
-            console.log('its ok event');
+        //Mouseenter,mousemove,keyup
+     
+
+        document.getElementById('text-f').addEventListener('focus',function(){
+            console.log("focus implements");
         });
     </script>
 </body>
