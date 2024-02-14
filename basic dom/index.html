@@ -11,11 +11,26 @@
         <h1>welcome To My Dom Journey</h1>
     </header>
     <main>
-        <h1>Welcome to main section</h1>
+        <h1>Welcome to First</h1>
         <ul>
             <li>One</li>
             <li>Two</li>
             <li>Three</li>
+           
+        </ul>
+        <h1 id="Second">Welcome to Second</h1>
+        <ul>
+            <li>Four</li>
+            <li>Five</li>
+            <li>Six</li>
+            <li>Seven</li>
+           
+        </ul>
+        <h1 class="Third">Welcome to Third</h1>
+        <ul>
+            <li>Eight</li>
+            <li>Nine</li>
+            <li>Ten</li>
            
         </ul>
     </main>
@@ -24,13 +39,12 @@
     </footer>
     <script src="dom.js"></script>
     <script>
-        const lilist=document.getElementsByTagName('li');
-        for(const li of lilist){
-            console.log(li.innerText);
-        }
-        const h1list=document.getElementsByTagName('h1');
-        for(const h1 of h1list){
-            console.log(h1.innerText);
+        const second=document.getElementById('Second');
+        console.log(second);
+        
+        const thirds=document.getElementsByClassName('Third');
+        for(const third of thirds){
+            console.log('third');
         }
     </script>
 </body>
