@@ -7,9 +7,5 @@ for(const section of sections){
     section.style.borderRadius='5px';
     section.style.backgroundColor='lightgray';
 }
-// const placeContainer=document.getElementById('place-container');
-// placeContainer.style.backgroundColor='yellow';
-// add and remove class in js dom------------
 const placeContainer=document.getElementById('place-container');
- placeContainer.classList.add('text-cenetr');
- placeContainer.classList.remove('text-cenetr');
+console.log(placeContainer.childNodes[1]);
