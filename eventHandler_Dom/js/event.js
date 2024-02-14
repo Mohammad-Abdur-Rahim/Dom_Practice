@@ -10,4 +10,9 @@ purple.onclick=function purple(){
 }
 //addEventListner ------
 const pink=document.getElementById('pink');
-pink.addEventListener('click',makePink);
+pink.addEventListener('click',makePink); 
+//addEventListner direct function ------
+const green=document.getElementById('green');
+green.addEventListener('click',function green(){
+    document.body.style.backgroundColor='green';
+})
