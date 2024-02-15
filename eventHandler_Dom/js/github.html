@@ -1,35 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>github solve</title>
 </head>
-<body>
-    <h1 id="h1-tag">GitHub Important Info</h1>
-    <input id="delete-input" type="text" placeholder="delete-type">
-    <button id="btn" disabled  >Delete</button>
+<body style="text-align: center;">
+
+    <h1 id="h1">GitHub Important Info Hide Please</h1>
+    <input id="input" type="text" placeholder="delete-type">
+    <button id="btn" >Delete</button>
+    <!-- 1st part of the function -->
     <script>
-
-        document.getElementById('delete-input').addEventListener('keyup',function(event){
-            const text=event.target.value;
-            //-----------------------------------
-           const Deletebtn= document.getElementById('btn');
-           if(text==='delete-type'){
-            Deletebtn.removeAttribute('disabled');
-           }else{
-            Deletebtn.setAttribute('disabled',true);
-           }
-        });
-
-
-
-
-
-        document.getElementById('btn').addEventListener('click',function (){
-            const scret=document.getElementById('h1-tag');
-            scret.style.display='none';
+        // 2nd part of the function
+        document.getElementById('btn').addEventListener('click', function () {
+            const hide = document.getElementById('h1');
+            hide.style.display = 'none';
         });
     </script>
 </body>
+
 </html>
