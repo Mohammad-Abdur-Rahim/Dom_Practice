@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Event</title>
+</head>
+<body>
+    <section>
+        <h1>Explore Dom Event Stoppagation Function</h1>
+        <ul id="ul">
+            <li id="one">Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+        </ul>
+    </section>
+    <script>
+        document.getElementById('one').addEventListener("click", function(event){
+            console.log("clicked item one");
+            event.stopPropagation();
+        });
+        document.getElementById('ul').addEventListener("click", function(){
+            console.log("clicked item ul");
+        });
+    </script>
+</body>
+</html>
