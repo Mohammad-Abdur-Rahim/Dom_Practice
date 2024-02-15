@@ -9,16 +9,27 @@
 <body style="text-align: center;">
 
     <h1 id="h1">GitHub Important Info Hide Please</h1>
-    <input id="input" type="text" placeholder="delete-type">
-    <button id="btn" >Delete</button>
+    <input id="input" type="text" placeholder="Delete-Type">
+    <button id="btn"disabled >Tittle Hide Button</button>
     <!-- 1st part of the function -->
     <script>
-        // 2nd part of the function
-        document.getElementById('btn').addEventListener('click', function () {
+        document.getElementById('btn').addEventListener('click', function(){
             const hide = document.getElementById('h1');
             hide.style.display = 'none';
+        })
+        // 2nd part of the function-------------------------
+        document.getElementById('input').addEventListener('keyup', function(event){
+                    const text= event.target.value;
+                    const deleteBtn = document.getElementById('btn');
+                    if(text==='Delete-Type'){
+                        deleteBtn.removeAttribute('disabled');
+                    }else{
+                        deleteBtn.setAttribute('disabled',true);
+                    }
         });
+
     </script>
 </body>
 
 </html>
+
